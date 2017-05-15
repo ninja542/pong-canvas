@@ -41,3 +41,9 @@ function Player(){
 function Computer(){
   this.paddle = new Paddle(175, 10, 50, 10);
 }
+Player.prototype.render = function(){
+  this.paddle.render();
+}
+Computer.prototype.render = function(){
+  this.paddle.render();
+}
